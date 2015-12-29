@@ -1,0 +1,70 @@
+{
+  "position": "client",
+  "date": "1447857230137",
+  "candidateState": "zaiZhi",
+  "profile": {
+    "name": "张三",
+    "sex": "male",
+    "birthday": "1447857230137",
+    "nationality": "汉",
+    "nativePlace": "北京",
+    "domicilePlace": "北京",
+    "marital": "weiHun",
+    "email": "larry.Page@google.com",
+    "mobile": "18888888888",
+    "constellation": "双子",
+    "bloodType": "A",
+    "englishBand": "十八级",
+    "address": "长安街1号",
+    "availableDate": "1447857230137"
+  },
+  "education": [{
+    "date":{
+      "start": "1447857230137",
+      "end": "1447857230137"
+    },
+    "name": "北京大学",
+    "major": "软件工程",
+    "degree": "博士",
+    "category": "hanShou"
+  }],
+  "experience": [{
+    "date":{
+      "start": "1447857230137",
+      "end": "1447857230137"
+    },
+    "company": "Google Inc.",
+    "department": "Angularjs Team",
+    "title": "Team leader",
+    "salary": "50000",
+    "reason": "some reason...",
+    "reference": {
+      "name": "Sergey.Brin@google.com",
+      "position": "SEO",
+      "phone": "188888888888"
+    }
+  }],
+  "salary":{
+    "base": 6000,
+    "welfare": 2000,
+    "bonus": 2000,
+    "accepted": 10000
+  },
+  "performance":{
+    "achievement": "主要业绩...",
+    "feature": "爱好特长..."
+  },
+  "family":[{
+    "name": "张三胖",
+    "relationShip": "父子",
+    "company": null,
+    "title": null,
+    "phone": "16666666666"
+  }],
+  "insurance": {
+    "name": ["yiLiao","yangLao"]
+  },
+  "confirmed": true,
+  "resumeState": "new",
+  "comment": ""
+}
