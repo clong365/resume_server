@@ -3,9 +3,11 @@
 var express = require('express');
 var controller = require('./resume.controller');
 
-var router = express.Router();
+//https://github.com/strongloop/express/issues/2281
+var router = express.Router({strict: true});
 
 router.get('/', controller.index);
+router.get('/:department/', controller.findByDepartment);
 router.get('/:id', controller.show);
 router.post('/', controller.create);
 router.put('/:id', controller.update);

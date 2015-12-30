@@ -20,6 +20,16 @@ exports.index = function(req, res) {
   });
 };
 
+exports.findByDepartment = function(req, res) {
+  var conditions = {
+    'department':req.params.department,
+  };
+  Resume.find({'department':req.params.department},function (err, resumes) {
+    if(err) { return handleError(res, err); }
+    return res.json(200, resumes);
+  });
+};
+
 // Get a single resume
 exports.show = function(req, res) {
   Resume.findById(req.params.id, function (err, resume) {

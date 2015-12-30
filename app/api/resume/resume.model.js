@@ -4,6 +4,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 //enums
+var departments = 'dev hr op admin'.split(' ');
 var genders = 'male female'.split(' ');
 var candidateStates = 'zaiZhi liZhi'.split(' ');
 var maritalStatus = 'weiHun weiHunWeiYu yiHunYiYu'.split(' ');
@@ -37,6 +38,7 @@ var profileSchema = new Schema({
 });
 
 var ResumeSchema = new Schema({
+  department: {type: String, enum: departments, required: true},
 	position: {type: String, enum: positions, required: true},
   date: { type: Date, default: Date.now },
   candidateState: {type: String, enum: candidateStates, required: true},
